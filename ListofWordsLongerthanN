@@ -1,0 +1,16 @@
+def list_word_longer_n(func_list,n):
+
+    new_list = []
+
+    for i in func_list:
+        if len(i) > n:
+            new_list.append(i)
+        else :
+            continue
+    return new_list
+
+a_list = ['abc','ghi','jklm','ahfuisHGAJHG','KSDIFHSHGJSHDJFHSI']
+
+n = int(input("Enter the value of n to get words longer that n :"))
+
+print(list_word_longer_n(a_list,n))
